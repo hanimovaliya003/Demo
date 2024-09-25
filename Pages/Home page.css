@@ -1,0 +1,820 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+::selection {
+  color: red;
+  background: yellow;
+}
+.navbar-nav li {
+  /* font-family: "Roboto Slab"; */
+  /* font-weight: 600; */
+  padding: 5px 10px;
+}
+
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-logo {
+  cursor: pointer;
+}
+
+/* From Uiverse.io by krlozCJ */
+/* .container {
+  position: relative;
+  --size-button: 40px;
+  color: black;
+
+  
+}
+
+.input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #0e0e0e;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color:none;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left:890px;
+}
+
+.input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:focus + .icon,
+.input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.container .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+  margin-left:900px;
+  
+}
+
+.container .icon svg {
+  width: 100%;
+  height: 100%;
+} */
+
+.write {
+  /* Replace with your image URL */
+  background-image: url(Images/bg-001.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background fixed */
+  height: 100vh;
+  color: white;
+  display: flex;
+  text-align: center !important;
+  margin-top: -80px;
+}
+
+.write h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 0.2rem;
+  margin-top:260px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  /* left:400px; */
+}
+
+.write h1{
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.2em;
+  text-transform: capitalize;
+  font-style: italic;
+  color: white;
+  font-size: 68px;
+  text-align: center;
+  /* margin-top:300px; */
+}
+
+.write p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.42em;
+  /* margin-top:500px; */
+}
+
+
+.most_popular h1{
+   font-size:50px;
+   font-family: 'Cormorant Garamond', serif;
+   font-weight:700;
+   font-style: italic;
+   text-align: center;
+   margin-top:100px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* .product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} */
+
+
+/* ====================shop============================== */
+
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-card h2{
+  font-size: 18px;
+  margin:10px 0px;
+  font-weight: 700;
+  margin-top: -5px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.price {
+  font-size:1.03rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #888;
+}
+
+.sizes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.size-btn {
+  border: 1px solid #ddd;
+  padding: 4px 9px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-btn:hover, 
+.size-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+}
+
+.color-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom:100px;
+}
+
+.color-btn.black { background-color: #000; }
+.color-btn.green { background-color: #008000; }
+.color-btn.red { background-color: #ff0000; }
+.color-btn.white { background-color: #fff; }
+
+.color-btn.active {
+  border-color: #333;
+}
+
+/* ====================shop============================== */
+
+
+.bag_images{
+  background-image: url(Images/bg-002.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background fixed */
+  height: 125vh;
+  color: white;
+  display: flex;
+}
+
+.bag_image1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.bag_image1 img {
+  max-width: 100%;
+  height:570px;
+  margin-top:85px;
+}
+
+@media (max-width: 768px) {
+  .bag_image1 {
+    justify-content: center;
+  }
+  .bag_image2 h1{
+    text-align: center;
+  }
+}
+@media (max-width: 768px){
+  .bag_image2 h1{
+    text-align: center;
+  }
+}
+
+.bag_image2 h1{
+   font-size:30px;
+   font-family: 'Cormorant Garamond', serif;
+   text-align: center;
+   display: flex;
+   justify-content: flex-end;
+   margin-right:90px;
+}
+.bag_image3{
+   text-align: center;
+   display: flex;
+   justify-content: flex-end;
+   margin-right:165px;
+   margin-top:15px;
+   font-size: 18px;
+   position: relative;
+}
+
+.work_write p{
+  font-size:15px;
+  letter-spacing: 0.10rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.work_write h1{
+  font-size:55px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight:700;
+}
+.work_write h6{
+  color: #888;
+  font-weight:500;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:15px;
+  word-spacing:0.05rem;
+  letter-spacing: 0.05rem;
+  line-height:1.50rem;
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .work_write h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .work_write p, .work_write h6 {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .work_image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work_write h1 {
+    font-size: 35px;
+  }
+
+  .work_write h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .work_write h1 {
+    font-size: 28px;
+  }
+
+  .work_write p, .work_write h6 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .p-5 {
+    padding: 3rem !important;
+  }
+}
+
+
+/* General styles */
+.work-title {
+  font-size: 15px;
+  letter-spacing: 0.10rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.work-heading {
+  font-size: 55px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.work-description {
+  color: #888;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+
+.fashion_images{
+  background-image: url(Images/bg-003.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background fixed */
+  height: 105vh;
+  color: white;
+  display: flex;
+}
+
+.fashion_image1 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.fashion_image1 img {
+  max-width: 100%;
+  height:570px;
+  /* margin-top:85px; */
+}
+
+@media (max-width: 768px) {
+  .fashion_image1 {
+    justify-content: center;
+  }
+  .fashion_image2 h1{
+    text-align: center;
+  }
+}
+@media (max-width: 768px){
+  .fashion_image2 h1{
+    text-align: center;
+  }
+}
+
+.fashion_image2 h1{
+   font-size:40px;
+   font-family: 'Cormorant Garamond', serif;
+   font-weight: 600;
+   font-style: italic;
+   /* text-align: center; */
+   display: flex;
+   justify-content: flex-start;
+   margin-right:90px;
+}
+.fashion_image3{
+   text-align: center;
+   display: flex;
+   justify-content: flex-start;
+   margin-top:15px;
+   font-size: 18px;
+   position: relative;
+}
+.custom-move-up {
+  margin-top:-130px; /* Adjust this value as needed */
+}
+.fashion_image4 p{
+  color:#fff;
+  font-weight:500;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:15px;
+  /* word-spacing:0.05rem; */
+  letter-spacing: 0.05rem;
+  line-height:1.50rem;
+}
+
+.container {
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title{
+  font-size:50px;
+   font-family: 'Cormorant Garamond', serif;
+   font-weight:700;
+   font-style: italic;
+   text-align: center;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1 1 calc(25% - 20px);
+  margin:0px;
+  max-width: calc(25% - 20px);
+}
+
+.product {
+  /* border-radius: 5px; */
+  padding:3px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  margin:5px 0;
+  font-weight:700;
+}
+
+.product p {
+  font-size: 14px;
+  color: #777;
+}
+
+.price {
+  font-size:17px;
+  font-weight:700;
+  margin: 10px 0;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+
+
+.add-to-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.product:hover .add-to-cart {
+  opacity: 1;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .col {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+      flex: 1 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+  }
+}
+
+
+.review_images{
+  background-image: url(Images/bg-004.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background fixed */
+  height:85vh;
+  color: white;
+  /* display: flex; */
+}
+.review_images h2{
+  font-size:35px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  position: relative;
+  font-style: italic;
+  text-align: center;
+  align-items: center;
+  /* display: flex; */
+  line-height:2.80rem;
+}
+.review_images p{
+  font-size:15px;
+  letter-spacing: 0.10rem;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.review_images{
+  font-size:18px;
+  text-align: center;
+}
+
+
+.Timeless_write p {
+  font-size: 15px;
+  letter-spacing: 0.10rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Timeless_write h1 {
+  font-size: 55px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.Timeless_write h6 {
+  color: #888;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.50rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .Timeless_write h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .Timeless_write p,
+  .Timeless_write h6 {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .Timeless_write h1 {
+    font-size: 35px;
+  }
+
+  .Timeless_write h6 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Timeless_write h1 {
+    font-size: 28px;
+  }
+
+  .Timeless_write p,
+  .Timeless_write h6 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .p-5 {
+    padding: 3rem !important;
+  }
+}
+
+
+
+/* ============================feature section=========================== */
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:5px;
+  padding-top:60px;
+  padding-bottom:20px;
+  text-align: center;
+}
+
+.feature-box {
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 22%;
+  box-sizing: border-box;
+}
+
+.feature-box h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+.feature-box p {
+  color: #666666;
+}
+
+.feature-box span {
+  color: #40c2c2;
+  font-size: 20px;
+  display: block;
+}
+
+
+.timeless_images{
+  background-image: url(Images/bg-006.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background fixed */
+  height:65vh;
+  color: white;
+  /* display: flex; */
+}
+@media (max-width: 992px) {
+  .timeless_images {
+    height: 50vh;  /* Adjust the height for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .timeless_images {
+    background-attachment: scroll; /* Disable fixed background for mobile */
+    height: 40vh;  /* Adjust the height for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .timeless_images {
+    height: 30vh;  /* Further reduce height for smaller devices */
+  }
+}
+.Timeless_write h6{
+   display: flex;
+   justify-content: flex-end;
+   /* margin-top:15px; */
+   font-size:15px;
+   position: relative;
+}
+
+
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ================================footer secation============================= */
+footer {
+  background-color: #f8f8f8;
+  padding:0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding:45px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px 20px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:800;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-column ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding:10px;
+  color: #666;
+  font-size: 0.9em;
+  padding-top: 25px;
+  border-top: 1px solid #a5a2a2;
+  /* opacity: 0.5; */
+  align-items: center;
+  /* justify-content: center; */
+}
+.footer-bottom span{
+  font-size:17px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  justify-content: center;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column {
+      margin-bottom: 20px;
+  }
+}

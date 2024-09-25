@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Clothing Store</title>
+
+    <!-- ================================BOXICONS ICON================== -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===================================GOOGLE FONTS=========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- ======================UNICONS=========================== -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- =============================CSS============================= -->
+ 
+    <link rel="stylesheet" href="Home page.css">
+
+    <!-- ==========================BOOSTRAP========================= -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ==================================JS===================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+
+   <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-5 ps-5" style="font-weight: 600;margin:10px;">
+        <li class="nav-item">
+          <a href="Home page.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="Shop page.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a href="About page.html">About&nbsp;Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="Contact page.html" tabindex="-1" aria-disabled="true">Contact&nbsp;Us</a>
+        </li>
+      </ul>
+    </div> 
+    <div class="position-absolute start-50">
+        <img width="96" height="50" src="Images/logo-01.svg" class="custom-logo" alt="Clothing Store" decoding="async">
+    </div> 
+    <!-- /* From Uiverse.io by krlozCJ */  -->
+    <!-- <div class="container">
+        <div class="ic">
+        <input type="text" name="text" class="input" required="" placeholder="Type to search...">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Search</title>
+                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+            </svg>
+        </div>
+    </div>
+    </div> -->
+
+    
+
+  </div>
+</nav>
+<div class="container-fulid">
+    <div class="write justify-content-center" >
+      <div class="nav_write" style="position: relative; text-align: centern !important;">
+        <h6>Casual & Everyday</h6>
+        <h1>Effortlessly blend comfort<br> & style!</h1>
+        <p>Effortlessly blend comfort and style with our Casual & Everyday collection, featuring cozy sweaters, versatile<br> denim, laid-back tees, and relaxed-fit joggers for your everyday adventures</p><br>
+        <button type="button" class="btn btn-outline-light btn-lg" style="font-size: 17px;font-family:Arial, Helvetica, sans-serif;">View Collection</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========================About Section====================0 -->
+
+    <section>
+      <div class="container">
+        <div class="col-md-12">
+            <div class="most_popular">
+                <h1>Most Popular</h1>
+            </div>
+                <div class="col-md-12" style="display: flex;">
+                
+                  <div class="col-md-3">
+                    <div class="product-grid">
+                      <div class="product-card">
+                          <img id="productImage1" src="Images/white.jpg" alt="Timeless Classic Collection">
+                          <p class="category">Work & Office</p>
+                          <h2>Timeless Classic Collection</h2>
+                          <p class="price">$154.90</p>
+                          <div class="sizes">
+                              <button class="size-btn">XL</button>
+                              <button class="size-btn">L</button>
+                              <button class="size-btn">M</button>
+                              <button class="size-btn">S</button>
+                              <button class="size-btn">XS</button>
+                          </div>
+                          <div class="colors">
+                              <button class="color-btn black" onclick="changeImage('black', 'productImage1')"></button>
+                              <button class="color-btn green" onclick="changeImage('green', 'productImage1')"></button>
+                              <button class="color-btn red" onclick="changeImage('red', 'productImage1')"></button>
+                              <button class="color-btn white" onclick="changeImage('white', 'productImage1')"></button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-grid">
+                      <div class="product-card">
+                          <img id="productImage2" src="Images/black1.jpg" alt="Timeless Classic Collection">
+                          <p class="category">Casual</p>
+                          <h2>Bohemian Rhapsody Attire</h2>
+                          <p class="price">$145.50</p>
+                          <div class="sizes">
+                              <button class="size-btn">XL</button>
+                              <button class="size-btn">L</button>
+                              <button class="size-btn">M</button>
+                              <button class="size-btn">S</button>
+                              <button class="size-btn">XS</button>
+                          </div>
+                          <div class="colors">
+                              <button class="color-btn black" onclick="changeImage1('black', 'productImage2')"></button>
+                              <button class="color-btn green" onclick="changeImage1('green', 'productImage2')"></button>
+                              <button class="color-btn red" onclick="changeImage1('red', 'productImage2')"></button>
+                              <!-- <button class="color-btn white" onclick="changeImage('white', 'productImage2')"></button> -->
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-grid">
+                      <div class="product-card">
+                          <img id="productImage3" src="Images/white2.jpg" alt="Timeless Classic Collection">
+                          <p class="category">Evening Dresses</p>
+                          <h2>Midnight Gala Maxi Dress</h2>
+                          <p class="price">$175.00</p>
+                          <div class="sizes">
+                              <!-- <button class="size-btn">XL</button> -->
+                              <button class="size-btn">L</button>
+                              <button class="size-btn">M</button>
+                              <button class="size-btn">S</button>
+                              <button class="size-btn">XS</button>
+                          </div>
+                          <div class="colors">
+                              <button class="color-btn black" onclick="changeImage3('black', 'productImage3')"></button>
+                              <button class="color-btn green" onclick="changeImage3('green', 'productImage3')"></button>
+                              <button class="color-btn red" onclick="changeImage3('red', 'productImage3')"></button>
+                              <button class="color-btn white" onclick="changeImage3('white', 'productImage3')"></button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="product-grid">
+                      <div class="product-card">
+                          <img id="productImage4" src="Images/white3.jpg" alt="Timeless Classic Collection">
+                          <p class="category">Casual</p>
+                          <h2>Power Suit Ensemble</h2>
+                          <p class="price">$125.50</p>
+                          <div class="sizes">
+                              <button class="size-btn">XL</button>
+                              <button class="size-btn">L</button>
+                              <button class="size-btn">M</button>
+                              <button class="size-btn">S</button>
+                              <button class="size-btn">XS</button>
+                          </div>
+                          <div class="colors">
+                              <button class="color-btn black" onclick="changeImage4('black', 'productImage4')"></button>
+                              <button class="color-btn green" onclick="changeImage4('green', 'productImage4')"></button>
+                              <button class="color-btn red" onclick="changeImage4('red', 'productImage4')"></button>
+                              <button class="color-btn white" onclick="changeImage4('white', 'productImage4')"></button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+         </div>
+    </section>
+
+
+<!-- ========================About Section====================0 -->
+
+<!-- ==========================Bag section=======================-->
+
+    <div class="container-fulid">
+      <div class="bag_images">
+        <div class="container">
+          <div class="col-md-12">
+              <div class="bag_image1">
+                <img src="Images/bg-03-.jpg" alt="">
+              </div>
+              <div class="bag_image2">
+                <h1>Explore our exquisite Bag <br> Collection now!</h1>
+              </div>
+              <div class="bag_image3">
+                <button type="button" class="btn btn-outline-light btn-lg" style="font-size: 17px;font-family:Arial, Helvetica, sans-serif; display: flex;
+                justify-content: flex-end;position: relative;   letter-spacing: 0.09rem;">View Collection</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- ==========================Bag section=======================-->
+
+
+<!-- ===============================Work & Office Attire section================== -->
+
+    <div class="container-fulid">
+      <div class="col-md-12"  style="display: flex;">
+        <div class="col-md-6 p-5">
+          <div class="work_write p-5 mt-4">
+              <p class="ps-5 pt-5">Work & Office Attire</p>
+              <h1 class="ps-5">Professional pinstripe <br>blazers collection</h1>
+              <h6 class="ps-5">Elevate your workwear with our Professional Pinstripe Blazers<br> Collection, where tailored sophistication meets modern<br> confidence for a powerfully polished office look.</h6>
+              <button  class="btn btn-outline-dark btn-lg mt-2 ms-5 ps-4" style="font-size: 15px;font-family:Arial, Helvetica, sans-serif;position: relative;   letter-spacing: 0.09rem; text-align: center;">Shop Now</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="work_image">
+            <img src="Images/bg-005.jpg" alt="" class="img-fluid" height="750px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ===============================Work & Office Attire section================== -->
+
+
+<!-- ==========================fashion section=======================-->
+
+<div class="container-fulid">
+  <div class="fashion_images">
+    <div class="container">
+      <div class="col-md-12">
+          <div class="fashion_image1" >
+            <img src="Images/fashion-01.jpg" alt="" class="img-fluid custom-move-up">
+          </div>
+          <div class="fashion_image2 ps-3">
+            <h1>Discover The Allure of<br> Fashion Reinvented!</h1>
+          </div>
+          <div class="fashion_image4 ps-3">
+            <p>Dive into a world of style with our latest collection! Shop now<br> and redefine your wardrobe narrative!</p>
+          </div>
+          <div class="fashion_image3 ps-3">
+            <button type="button" id="fashion_btn" class="btn btn-outline-light btn-lg" style="font-size: 17px;font-family:Arial, Helvetica, sans-serif;position: relative; letter-spacing: 0.09rem;">Shop Now</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==========================Bag section=======================-->
+
+<div class="container pb-5 mb-4">
+  <h2 class="section-title pt-5 mt-4 p-4 ">Newest Products</h2>
+  <div class="row">
+      <div class="col">
+          <div class="product">
+              <img src="Images/Newest-01.jpg" alt="Professional Pinstripe Blazer">
+              <span class="add-to-cart" onclick="addToCart('Professional Pinstripe Blazer', 109.99)">🛒</span>
+              <p class="pt-2">Activewear</p>
+              <h3>Professional Pinstripe Blazer</h3>
+              <span class="price">$109.99</span>
+          </div>
+      </div>
+      <div class="col">
+          <div class="product">
+              <img src="Images/Newest-02.jpg" alt="Relaxed Fit Joggers">
+              <span class="add-to-cart" onclick="addToCart('Professional Pinstripe Blazer', 109.99)">🛒</span>
+              <p class="pt-2">Work & Office</p>
+              <h3>Relaxed Fit Joggers</h3>
+              <span class="price">$250.00</span>
+          </div>
+      </div>
+      <div class="col">
+          <div class="product">
+              <img src="Images/Newest-03.jpg" alt="Urban Chic Ensemble">
+              <span class="add-to-cart" onclick="addToCart('Professional Pinstripe Blazer', 109.99)">🛒</span>
+              <p class="pt-2">Evening Dresses</p>
+              <h3>Urban Chic Ensemble</h3>
+              <span class="price">$224.95</span>
+          </div>
+      </div>
+      <div class="col">
+          <div class="product">
+              <img src="Images/Newest-04.jpg" alt="Weekend Wanderlust Wardrobe">
+              <span class="add-to-cart" onclick="addToCart('Professional Pinstripe Blazer', 109.99)">🛒</span>              
+              <p class="pt-2">Activewear</p>
+              <h3>Weekend Wanderlust Wardrobe</h3>
+              <span class="price">$119.95</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- ==========================Bag section=======================-->
+
+<!-- ==========================review section=======================-->
+
+<div class="conatiner-fulid">
+  <div class="review_images pt-5 mt-5">
+    <i class='bx bxs-star pt-5 mt-5' style='color:#f49008'  ></i>
+    <i class='bx bxs-star' style='color:#f49008'  ></i>
+    <i class='bx bxs-star' style='color:#f49008'  ></i>
+    <i class='bx bxs-star' style='color:#f49008'  ></i>
+    <i class='bx bxs-star' style='color:#f49008'  ></i>
+     <h2>”FemmeWardrobe is my fashion sanctuary! The curated <br> collection effortlessly blends chic trends with timeless elegance,<br> making every purchase a delightful discovery. The quality of<br> their pieces is unmatched, and I appreciate the brand's<br> commitment to sustainable fashion. What truly sets<br> FemmeWardrobe apart is their customer-centric approach.”</h2>
+     <p class="mt-3">Sarah M., Devoted FemmeWardrobe Fan</p>
+  </div>
+</div>
+
+
+<!-- ==========================Bag section=======================-->
+
+
+<!-- ==========================feature section=======================-->
+
+<section>
+  <div class="container">
+      <div class="features-section">
+          <div class="feature-box">
+            <i class='bx bxs-shopping-bag' style="font-size:32px ;"></i>
+              <h2>Secure Payments</h2>
+              <p>Shop with confidence knowing<br> that your transactions are<br> safeguarded.</p>
+          </div>
+          <div class="feature-box">
+            <i class='bx bxs-truck' style="font-size:32px ;" ></i>
+              <h2>Free Shipping</h2>
+              <p>Shopping with no extra charges<br> savor the liberty of complimentary<br> shipping on every order.</p>
+          </div>
+          <div class="feature-box">
+            <i class='bx bx-revision'  style="font-size:32px ;"></i>
+              <h2>Easy Returns</h2>
+              <p>With our hassle-free Easy Returns,<br> changing your mind has never<br> been more convenient.</p>
+          </div>
+          <div class="feature-box">
+              <h2>Order Tracking</h2>
+              <p>Stay in the loop with our Order<br> Tracking feature – from checkout<br> to your doorstep.</p>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<!-- ==========================feature section=======================-->
+
+
+<!-- ==========================timeless section=======================-->
+
+<div class="container-fulid mt-5 pt-5">
+  <div class="timeless_images">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="col-md-6 offset-md-6">
+          <div class="Timeless_write mt-5 pt-3">
+            <p class="pe-5">Explore</p>
+            <h1 class="pe-5">Elevate your wardrobe,<br> embrace timeless style!</h1>
+            <h6 class="pe-5" style="color: white; font-size: 16px;">Explore our collections today and experience the joy of fashion. Shop now for the epitome of chic sophistication!</h6>
+            <button  class="btn btn-outline-light btn-lg mt-2 me-5 pe-4" style="font-size: 15px;font-family:Arial, Helvetica, sans-serif;position: relative;   letter-spacing: 0.09rem; text-align: center;">Shop Now</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================timeless section=======================-->
+
+<!-- ==================FOoter section================================ -->
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Categories</h3>
+          <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Work & Office</a></li>
+              <li><a href="#">Activewear</a></li>
+              <li><a href="#">Evening Dresses</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+              <li><a href="#">Contact Support</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Returns</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Social Media</h3>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Pinterest</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <b><span><p>Copyright &copy; 2024 Clothing Store | Powered by Clothing Store</p></span></b>
+  </div>
+</footer>
+
+
+
+
+<!-- ===========================footer section============================ -->
+
+
+    <!-- ==================MAIN JS=================================== -->
+
+
+<script src="main.js"></script>
+
+
+</body>
+</html>

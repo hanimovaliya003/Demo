@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page5</title>
+
+
+     <!-- Font Awesome for star icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+     <!-- ================================BOXICONS ICON================== -->
+
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!-- ===================================GOOGLE FONTS=========================== -->
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+ 
+     <!-- ======================UNICONS=========================== -->
+ 
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+ 
+     <!-- =============================CSS============================= -->
+  
+     <link rel="stylesheet" href="Shop5.css">
+ 
+     <!-- ==========================BOOSTRAP========================= -->
+ 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+ 
+     <!-- ==================================JS===================================== -->
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <!-- ===================================header============================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 ps-5 m-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home page.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+            <img src="Images/logo-01.svg" alt="Logo" width="100">
+          </a>
+        </div>
+        <!-- cart  -->
+        <div class="cart ps-5 mt-4">
+          <button id="cartButton">
+              <i class='bx bxs-cart-alt'></i> <span id="cartCount" class="badge">0</span>
+            </button>
+      </div>
+</nav>
+
+
+
+
+
+
+
+<!-- Shopping Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content pt-5 pb-2">
+<div class="modal-header">
+<h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div id="cartItems">
+  <!-- Cart items will be dynamically added here -->
+</div>
+<div class="d-flex justify-content-between pt-4">
+  <h5>Subtotal:</h5>
+  <h5 id="cartTotal">$0.00</h5>
+</div>
+</div>
+<div style="display: grid; gap: 10px;">
+<button type="button" class="btn" style="background-color: #00AC97; height: 50px; font-size: 20px; color: white;" id="viewCartBtn"><a href="cart.html" style="text-decoration: none; color: white;">View Cart</a></button>
+<button type="button" class="btn" style="background-color: #00AC97; height: 50px; font-size: 20px; color: white;" id="checkoutBtn">Checkout</button>
+</div>
+</div>
+</div>
+</div>
+    <!-- ===================================header============================== -->
+
+        
+        <!-------------------- add to cart hover ---------------------->
+
+        <div class="container">
+          <div class="col-md-6">
+            <div class="col-md-3">
+              <div class="product-header" id="productHeader">
+                <img src="Images/shop16.jpg" alt="" height="45px" width="35px" style="padding: none; margin-left:100px;">
+                <h1 style="font-size:20px;color: #868484;margin-left:-850px;">Relaxed Fit Joggers</h1>
+                <span class="prices" style="font-size: medium; font-family:Arial, Helvetica, sans-serif; color: #b8b4b4; letter-spacing: 0.05rem; margin-right:-850px; position: relative;">
+                  $250.00</span>
+                <button class="btn btn-outline-dark" style="font-size:15px; margin-right: 115px;">SELECT OPTION</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+          <!-- Notification Bar -->
+          <div class="container">
+            <div id="cartNotification" class="alert bg-light" style="display: none; margin:30px; padding-bottom:30px; border-top: 2px solid black; border-radius: 1px;"><i class='bx bxs-check-circle'></i>
+              “Relaxed Fit Joggers” has been added to your cart.
+              <button class="btn btn-outline-dark" style="margin-left:650px;text-transform: uppercase;">view cart</button>
+            </div>
+          </div>
+    
+        <!-------------------- add to cart hover ---------------------->
+     
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-md-6">
+              <figure class="zoom" onmousemove="zoom(event)" id="zoomContainer" style="background-image: url('Images/shop16.jpg'); width: 100%;">
+                  <img src="Images/shop16.jpg" id="productImage2"/>
+              </figure>
+              <div class="thumbnail-images d-flex justify-content-between mt-3">
+                <img src="Images/shop16.jpg" alt="Thumbnail 1" class="img-thumbnail" onclick="changeMainImage('Images/shop16.jpg')">
+                <img src="Images/shop17.jpg" alt="Thumbnail 2" class="img-thumbnail" onclick="changeMainImage('Images/shop17.jpg')">
+                <img src="Images/shop18.jpg" alt="Thumbnail 3" class="img-thumbnail" onclick="changeMainImage('Images/shop18.jpg')">
+                <img src="Images/shop16.jpg" alt="Thumbnail 4" class="img-thumbnail" onclick="changeMainImage('Images/shop16.jpg')">
+            </div>
+          </div>
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <p class="home"><a href="Home page.html" style="text-decoration: none; color: #868484;">Home</a> / Work & Office / Relaxed Fit Joggers
+                </p>
+                <h6 class="casual">Work & Office</h6>
+                <h2 class="Attire">Relaxed Fit Joggers</h2>
+                <h1 class="price">$250.00<span>& Free Shipping</span></h1>
+                <p class="description">
+                    From the office to high-powered meetings, our Bohemian Rhapsody Attire<br> is more than clothing; it's a statement of strength, ambition, and<br> unwavering elegance, ensuring you stride into any professional setting with<br> unparalleled grace and authority.
+                </p>
+                <!-- <div class="add-to-cart d-flex align-items-center mb-3">
+                    <input type="number" class="form-control mr-3" value="1" min="1" style="width:60px;">&nbsp;&nbsp;
+                </div> -->
+                <div class="product-detalis" style="display: flex;">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button" id="decreaseQty">-</button>
+                  <input type="text" id="quantityInput" class="form-control" value="1" style="max-width: 50px;">
+                  <button class="btn btn-outline-secondary" type="button" id="increaseQty">+</button>
+              </div>
+              <button id="addToCartBtn" class="btn btn-outline-dark" style=" height:45px; width:650px; margin-right:350px;">Add to Cart</button>
+            </div>
+                <hr>
+                <div class="product-meta mb-3">
+                    <span>Category: <strong>Work & Office</strong></span>
+                </div>
+                <div class="safe-checkout text-center">
+                    <p class="mb-2">Guaranteed Safe Checkout</p>
+                    <img src="Images/visa.jpeg" alt="Visa" class="payment-icon" style="border-radius:3px;">
+                    <img src="Images/matercard.jpeg" alt="MasterCard" class="payment-icon" style="border-radius:3px;">
+                    <img src="Images/american.png" alt="American Express" class="payment-icon" style="border-radius:3px;">
+                    <img src="Images/discover.webp" alt="Discover" class="payment-icon">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-container mt-5">
+      <div class="tabs">
+          <button class="tab-button active" data-tab="description">Description</button>
+          <!-- <button class="tab-button" data-tab="additional-info">Additional information</button> -->
+          <button class="tab-button" data-tab="reviews">Reviews (0)</button>
+      </div>
+      <div class="tab-content active" id="description">
+          <p>Command attention and redefine authority with our Bohemian Rhapsody Attire – a collection tailored to empower the modern woman. Immerse yourself in a fusion   of sleek design and undeniable confidence as you slip into our meticulously crafted suits. With sharp lines, sophisticated cuts, and attention to detail, each piece in this ensemble exudes professionalism without compromising on style. From the office to high-powered meetings, our Bohemian Rhapsody Attire is more than clothing; it’s a statement of strength, ambition, and unwavering elegance, ensuring you stride into any professional setting with unparalleled grace and authority.</p>
+      </div>
+    
+      <div class="tab-content" id="reviews">
+          <p>There are no reviews yet.</p>
+          <div class="container mt-4"  style="border: 1px solid #ddd;">
+            <div class="row">
+                <div class="col-12 mt-3 ms-2">
+                    <h3 class="Bohemian">Be the first to review “Bohemian Rhapsody Attire”</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                </div>
+        
+                <div class="col-12 ms-2">
+                    <form>
+                        <div class="form-group" style="display: flex;">
+                            <label for="rating">Your rating *</label>
+                            <div id="rating" class="star-rating mt-4">
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="review">Your review *</label>
+                            <textarea class="form-control" id="review" rows="3"></textarea>
+                        </div>
+        
+                        <div class="form-group row mt-2">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="name">Name *</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+        
+                        <div class="form-group form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="saveInfo">
+                            <label class="form-check-label" for="saveInfo">Save my name, email, and website in this browser for the next time I comment.</label>
+                        </div>
+        
+                        <button class="btn btn-outline-dark mt-4 mb-4">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="container">
+    <div class="releted_write mt-3">
+      <h1>Related products</h1>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product-grid mt-3">
+        <div class="product-card">
+            <a href="shop1.html"><img id="productImage6" src="Images/Newest-04.jpg" alt="Timeless Classic Collection"></a>
+            <p class="category">Casual</p>
+            <h2>Bohemian Rhapsody Attire</h2>
+            <p class="price1">$145.50 – $165.50</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+<!-- ==================FOoter section================================ -->
+
+<footer>
+  <div class="footer-container mt-5 mt-5">
+      <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Categories</h3>
+          <ul>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Work & Office</a></li>
+              <li><a href="#">Activewear</a></li>
+              <li><a href="#">Evening Dresses</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+              <li><a href="#">Contact Support</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Returns</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Social Media</h3>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Pinterest</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <b><span><p>Copyright &copy; 2024 Clothing Store | Powered by Clothing Store</p></span></b>
+  </div>
+</footer>
+
+
+<!-- ===========================footer section============================ -->
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    
+
+<script src="stick.js"></script>
+<script src="Sticky.js"></script>
+<script src="main.js"></script>
+<script src="shop5.js"></script>
+
+</body>
+</html>
+    
